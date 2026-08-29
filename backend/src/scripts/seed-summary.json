@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-08-28T14:46:00.251Z",
+  "status": "SUCCESS",
+  "seededCategories": 4,
+  "seededProducts": 24,
+  "seededVariants": 68,
+  "seededAdmin": "admin@elemental.studio",
+  "adminPassword": "supersecret_elemental"
+}
