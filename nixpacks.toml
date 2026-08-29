@@ -3,7 +3,7 @@
 nixPkgs = ["nodejs_20", "npm-9_x"]
 
 [phases.install]
-cmds = ["npm --prefix storefront install", "npm --prefix backend install"]
+cmds = ["npm --prefix storefront install --legacy-peer-deps", "npm --prefix backend install --legacy-peer-deps"]
 
 [phases.build]
 cmds = ["npm --prefix storefront run build"]
