@@ -1,0 +1,12 @@
+# Nixpacks configuration for Railway / Railpack
+[phases.setup]
+nixPkgs = ["nodejs_20", "npm-9_x"]
+
+[phases.install]
+cmds = ["npm --prefix storefront install", "npm --prefix backend install"]
+
+[phases.build]
+cmds = ["npm --prefix storefront run build"]
+
+[start]
+cmd = "sh start.sh"

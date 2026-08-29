@@ -1,0 +1,20 @@
+{
+  "name": "elemental-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "storefront"
+  ],
+  "scripts": {
+    "build": "npm --prefix storefront run build",
+    "start": "npm --prefix storefront run start",
+    "build:storefront": "npm --prefix storefront run build",
+    "start:storefront": "npm --prefix storefront run start",
+    "build:backend": "npm --prefix backend run build",
+    "start:backend": "npm --prefix backend run start",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:storefront": "npm --prefix storefront run dev",
+    "seed": "node backend/src/scripts/seed.js"
+  }
+}
